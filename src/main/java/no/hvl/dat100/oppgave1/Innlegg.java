@@ -56,11 +56,13 @@ public abstract class Innlegg {
 	
 	public void doLike () {
 		likes += 1;
-	}  
+	}
 	
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
-
+        if(this.id == innlegg.id){
+            return true;
+        }
+        return false;
 	}
 	
 	@Override
