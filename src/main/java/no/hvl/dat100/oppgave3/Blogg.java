@@ -61,10 +61,10 @@ public class Blogg {
 
     @Override
     public String toString() {
-        String resultat = nesteledig + "\n";
-
+        System.out.println(nesteledig);
+        String resultat = "";
         for (int i = 0; i < nesteledig; i++) {
-            resultat = resultat + innleggtabell[i].toString();
+            resultat = resultat + innleggtabell[i].toString() + "\n";
         }
 
         return resultat;
