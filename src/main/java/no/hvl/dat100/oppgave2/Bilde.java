@@ -8,8 +8,6 @@ public class Bilde extends Tekst {
 	
 	public Bilde(int id, String bruker, String dato, String tekst, String url) {
 		throw new UnsupportedOperationException(TODO.constructor("Bilde"));
-        
-        sdfgjlsdfjgkldmfklgmsdlkgf
 	}
 
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
