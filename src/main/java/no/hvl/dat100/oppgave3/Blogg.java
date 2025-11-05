@@ -37,8 +37,8 @@ public class Blogg {
 
 	public boolean finnes(Innlegg innlegg) {
         return finnInnlegg(innlegg) != -1;
-        }
-	}
+    }
+
 
 	public boolean ledigPlass() {
         if(nesteledig < innleggtabell.length) {
@@ -51,7 +51,8 @@ public class Blogg {
         if(!ledigPlass()) {
             return false;
         }
-        if(finnes)
+        if(!finnes(innlegg)){
+
 	}
 	
 	public String toString() {
