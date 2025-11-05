@@ -19,7 +19,7 @@ public class Blogg {
 	}
 
 	public int getAntall() {
-		return nesteledig;
+        return nesteledig;
 	}
 	
 	public Innlegg[] getSamling() {
@@ -28,7 +28,7 @@ public class Blogg {
 	
 	public int finnInnlegg(Innlegg innlegg) {
         for (int i = 0; i < nesteledig-1; i++) {
-            if(innleggtabell[i].erLik(innlegg)){
+            if (innleggtabell[i].erLik(innlegg)){
                 return i;
             }
         }
@@ -38,7 +38,7 @@ public class Blogg {
 	public boolean finnes(Innlegg innlegg) {
         return finnInnlegg(innlegg) != -1;
         }
-	}
+
 
 	public boolean ledigPlass() {
         if(nesteledig < innleggtabell.length) {
