@@ -8,12 +8,13 @@ import no.hvl.dat100.oppgave3.*;
 
 public class SkrivBlogg {
 
-	public static boolean skriv(Blogg samling, String mappe, String filnavn) {
+    public static boolean skriv(Blogg samling, String mappe, String filnavn) {
+        String path = mappe + System.getProperty("file.separator") + filnavn;
 
-		String sep = System.getProperty("file.separator");
-        String path = (mappe == null || mappe.isEmpty())
-                ?filnavn
-                : (mappe.endsWith(sep) ? mappe + filnavn : mappe + sep + filnavn);
-
-	}
-}
+        try (PrintWriter pw = new PrintWriter(path)) {
+            pw.print(samling.toString());
+            return true;
+        } catch (FileNotFoundException e) {
+            return false;
+        }
+    }
