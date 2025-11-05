@@ -3,8 +3,11 @@ package no.hvl.dat100.oppgave1;
 import no.hvl.dat100.common.TODO;
 
 public abstract class Innlegg {
-	
-	// TODO - deklarering av objektvariable
+
+    public int id;
+    public String bruker;
+    public String dato;
+    public int likes;
 	
 	public Innlegg() {
 		
@@ -25,7 +28,10 @@ public abstract class Innlegg {
 	
 	public String getBruker() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+	public int getId(){
+        return id;
+        }
+    pub
 
 	}
 
