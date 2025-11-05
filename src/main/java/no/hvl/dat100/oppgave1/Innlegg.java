@@ -65,8 +65,6 @@ public abstract class Innlegg {
 	
 	@Override
 	public String toString() {
-		
-		throw new UnsupportedOperationException(TODO.method());
 				
 	}
 	
