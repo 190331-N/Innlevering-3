@@ -67,9 +67,7 @@ public abstract class Innlegg {
 	
 	@Override
 	public String toString() {
-		
-		throw new UnsupportedOperationException(TODO.method());
-				
+        return id + "\n" + bruker + "\n" + dato + "\n" + likes;
 	}
 	
 	// Metoden nedenfor er kun for valgfri oppgave 6
