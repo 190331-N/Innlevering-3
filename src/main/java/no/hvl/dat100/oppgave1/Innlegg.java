@@ -46,10 +46,12 @@ public abstract class Innlegg {
 	public int getId() {
 		return id;
 	}
+    public void setId(int ny){
+        id = ny;
+    }
 
 	public int getLikes() {
 		return likes;
-
 	}
 	
 	public void doLike () {
