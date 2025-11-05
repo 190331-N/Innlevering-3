@@ -18,3 +18,4 @@ public class SkrivBlogg {
             return false;
         }
     }
+}
