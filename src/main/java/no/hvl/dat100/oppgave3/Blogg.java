@@ -52,7 +52,11 @@ public class Blogg {
             return false;
         }
         if(!finnes(innlegg)){
-
+            innleggtabell[nesteledig] = innlegg;
+            nesteledig++;
+            return true;
+        }
+        return false;
 	}
 	
 	public String toString() {
