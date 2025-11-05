@@ -58,10 +58,17 @@ public class Blogg {
         }
         return false;
 	}
-	
-	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
-	}
+
+    @Override
+    public String toString() {
+        String resultat = nesteledig + "\n";
+
+        for (int i = 0; i < nesteledig; i++) {
+            resultat = resultat + innleggtabell[i].toString();
+        }
+
+        return resultat;
+    }
 
 	// valgfrie oppgaver nedenfor
 	

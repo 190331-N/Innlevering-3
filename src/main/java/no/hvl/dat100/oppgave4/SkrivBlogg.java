@@ -10,6 +10,10 @@ public class SkrivBlogg {
 
 	public static boolean skriv(Blogg samling, String mappe, String filnavn) {
 
-		throw new UnsupportedOperationException(TODO.method());
+		String sep = System.getProperty("file.separator");
+        String path = (mappe == null || mappe.isEmpty())
+                ?filnavn
+                : (mappe.endsWith(sep) ? mappe + filnavn : mappe + sep + filnavn);
+
 	}
 }
