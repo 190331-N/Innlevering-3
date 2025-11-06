@@ -15,10 +15,5 @@ public class HtmlBlogg extends Blogg {
 	
 	private static String HTMLPOSTFIX = 
 			"\t</body>\n</html>";
-	
-	@Override
-	public String toString() {
-		throw new UnsupportedOperationException(TODO.method());
-		
-	}
+
 }
