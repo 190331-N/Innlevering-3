@@ -67,7 +67,6 @@ public abstract class Innlegg {
         }
         return false;
     }
-
     @Override
     public String toString() {
         return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
