@@ -2,6 +2,7 @@ package no.hvl.dat100.oppgave3;
 
 import no.hvl.dat100.common.TODO;
 import no.hvl.dat100.oppgave1.*;
+import org.w3c.dom.ls.LSOutput;
 
 public class Blogg {
 
@@ -27,7 +28,7 @@ public class Blogg {
 	}
 	
 	public int finnInnlegg(Innlegg innlegg) {
-        for (int i = 0; i < nesteledig-1; i++) {
+        for (int i = 0; i < nesteledig; i++) {
             if(innleggtabell[i].erLik(innlegg)){
                 return i;
             }
@@ -61,8 +62,7 @@ public class Blogg {
 
     @Override
     public String toString() {
-        System.out.println(nesteledig);
-        String resultat = "";
+        String resultat = nesteledig + "\n";
         for (int i = 0; i < nesteledig; i++) {
             resultat = resultat + innleggtabell[i].toString() + "\n";
         }
