@@ -70,7 +70,7 @@ public class Blogg {
         return resultat;
     }
 
-	// valgfrie oppgaver nedenfor
+	 // valgfrie oppgaver nedenfor
 	
 	public void utvid() {
 		throw new UnsupportedOperationException(TODO.method());
